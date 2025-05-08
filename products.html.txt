@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المنتجات - متجر حسن</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">متجر حسن</div>
+        <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="products.html">المنتجات</a></li>
+            <li><a href="contact.html">اتصل بنا</a></li>
+            <li><a href="cart.html">عربة التسوق (<span id="cart-count">0</span>)</a></li>
+            <li><a href="login.html">تسجيل الدخول</a></li>
+        </ul>
+    </nav>
+
+    <section class="products">
+        <h2>منتجاتنا</h2>
+        <div class="product-list">
+            <!-- صواني تقديم خشب -->
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/5e/4f/2d/5e4f2d8f6b2e1d3a9c8e7f9d0a1b2c3.jpg" alt="صينية خشب 1">
+                <h3>صينية خشب 1</h3>
+                <p class="tag">تصميم أنيق</p>
+                <p>السعر: 120 جنيه</p>
+                <button onclick="addToCart('صينية خشب 1', 120)">أضف إلى العربة</button>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/9f/3d/2e/9f3d2e8f6b2e1d3a9c8e7f9d0a1b2c3.jpg" alt="صينية خشب 2">
+                <h3>صينية خشب 2</h3>
+                <p class="tag">جودة عالية</p>
+                <p>السعر: 150 جنيه</p>
+                <button onclick="addToCart('صينية خشب 2', 150)">أضف إلى العربة</button>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/2e/5f/3d/2e5f3d8f6b2e1d3a9c8e7f9d0a1b2c3.jpg" alt="صينية خشب 3">
+                <h3>صينية خشب 3</h3>
+                <p class="tag">ديكور مميز</p>
+                <p>السعر: 130 جنيه</p>
+                <button onclick="addToCart('صينية خشب 3', 130)">أضف إلى العربة</button>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/7f/4e/2d/7f4e2d8f6b2e1d3a9c8e7f9d0a1b2c3.jpg" alt="صينية خشب 4">
+                <h3>صينية خشب 4</h3>
+                <p class="tag">عملية جدًا</p>
+                <p>السعر: 140 جنيه</p>
+                <button onclick="addToCart('صينية خشب 4', 140)">أضف إلى العربة</button>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/1e/6f/3d/1e6f3d8f6b2e1d3a9c8e7f9d0a1b2c3.jpg" alt="صينية خشب 5">
+                <h3>صينية خشب 5</h3>
+                <p class="tag">فخامة كلاسيك</p>
+                <p>السعر: 160 جنيه</p>
+                <button onclick="addToCart('صينية خشب 5', 160)">أضف إلى العربة</button>
+            </div>
+            <!-- أكريليك بوكسات هدايا -->
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/3e/7f/4d/3e7f4d8f6b2e1d3a9c8e7f9d0a1b2c3.jpg" alt="بوكس أكريليك 1">
+                <h3>بوكس أكريليك 1</h3>
+                <p class="tag">هدية أنيقة</p>
+                <p>السعر: 200 جنيه</p>
+                <button onclick="addToCart('بوكس أكريليك 1', 200)">أضف إلى العربة</button>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/4e/8f/5d/4e8f5d8f6b2e1d3a9c8e7f9d0a1b2c3.jpg" alt="بوكس أكريليك 2">
+                <h3>بوكس أكريليك 2</h3>
+                <p class="tag">شفاف وجميل</p>
+                <p>السعر: 180 جنيه</p>
+                <button onclick="addToCart('بوكس أكريليك 2', 180)">أضف إلى العربة</button>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/5e/9f/6d/5e9f6d8f6b2e1d3a9c8e7f9d0a1b2c3.jpg" alt="بوكس أكريليك 3">
+                <h3>بوكس أكريليك 3</h3>
+                <p class="tag">تصميم عصري</p>
+                <p>السعر: 220 جنيه</p>
+                <button onclick="addToCart('بوكس أكريليك 3', 220)">أضف إلى العربة</button>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/6e/0f/7d/6e0f7d8f6b2e1d3a9c8e7f9d0a1b2c3.jpg" alt="بوكس أكريليك 4">
+                <h3>بوكس أكريليك 4</h3>
+                <p class="tag">هدية مميزة</p>
+                <p>السعر: 190 جنيه</p>
+                <button onclick="addToCart('بوكس أكريليك 4', 190)">أضف إلى العربة</button>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/7e/1f/8d/7e1f8d8f6b2e1d3a9c8e7f9d0a1b2c3.jpg" alt="بوكس أكريليك 5">
+                <h3>بوكس أكريليك 5</h3>
+                <p class="tag">فخامة وأناقة</p>
+                <p>السعر: 210 جنيه</p>
+                <button onclick="addToCart('بوكس أكريليك 5', 210)">أضف إلى العربة</button>
+            </div>
+            <!-- دروع أكريليك تكريمية -->
+            <div class="product">
+                <img src="https://i.imgur.com/8e2f9d8f6b2e1d3a9c8e7f9d0a1b2c3.jpg" alt="درع تكريم 1">
+                <h3>درع تكريم 1</h3>
+                <p class="tag">تقدير مميز</p>
+                <p>السعر: 250 جنيه</p>
+                <button onclick="addToCart('درع تكريم 1', 250)">أضف إلى العربة</button>
+            </div>
+            <div class="product">
+                <img src="https://i.imgur.com/9e3f0d8f6b2e1d3a9c8e7f9d0a1b2c3.jpg" alt="درع تكريم 2">
+                <h3>درع تكريم 2</h3>
+                <p class="tag">شكل أنيق</p>
+                <p>السعر: 280 جنيه</p>
+                <button onclick="addToCart('درع تكريم 2', 280)">أضف إلى العربة</button>
+            </div>
+            <div class="product">
+                <img src="https://i.imgur.com/0e4f1d8f6b2e1d3a9c8e7f9d0a1b2c3.jpg" alt="درع تكريم 3">
+                <h3>درع تكريم 3</h3>
+                <p class="tag">تصميم فاخر</p>
+                <p>السعر: 270 جنيه</p>
+                <button onclick="addToCart('درع تكريم 3', 270)">أضف إلى العربة</button>
+            </div>
+            <div class="product">
+                <img src="https://i.imgur.com/1e5f2d8f6b2e1d3a9c8e7f9d0a1b2c3.jpg" alt="درع تكريم 4">
+                <h3>درع تكريم 4</h3>
+                <p class="tag">تقدير خاص</p>
+                <p>السعر: 260 جنيه</p>
+                <button onclick="addToCart('درع تكريم 4', 260)">أضف إلى العربة</button>
+            </div>
+            <div class="product">
+                <img src="https://i.imgur.com/2e6f3d8f6b2e1d3a9c8e7f9d0a1b2c3.jpg" alt="درع تكريم 5">
+                <h3>درع تكريم 5</h3>
+                <p class="tag">شكل عصري</p>
+                <p>السعر: 290 جنيه</p>
+                <button onclick="addToCart('درع تكريم 5', 290)">أضف إلى العربة</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
